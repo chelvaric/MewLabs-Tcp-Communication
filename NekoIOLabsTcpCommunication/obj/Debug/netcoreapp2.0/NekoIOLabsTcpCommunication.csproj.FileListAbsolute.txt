@@ -1,0 +1,9 @@
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\bin\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.deps.json
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\bin\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.dll
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\bin\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.pdb
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\obj\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.csprojResolveAssemblyReference.cache
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\obj\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.csproj.CoreCompileInputs.cache
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\obj\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.AssemblyInfoInputs.cache
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\obj\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.AssemblyInfo.cs
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\obj\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.dll
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication\obj\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.pdb

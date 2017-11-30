@@ -1,4 +1,4 @@
-# MewLabs-Tcp-Communication
+# NekoIOLabs-Tcp-Communication
 ## General Info
 
 This is a liberary i made so that people don't have to rewrite common tcp communications. This liberary has a genreal implementation of a Tcp Server and client.
@@ -19,10 +19,13 @@ Websocket Support since there is no good websocket server provided for .net core
 
 todo
 
-## using Existing Parser
+## Using Existing Parser
 todo
 
 ## Writing Custom Parser
 
 todo
 
+## Using an Existing Logger
+
+## Writing a Custom logging

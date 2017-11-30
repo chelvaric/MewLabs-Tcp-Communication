@@ -1601,14 +1601,14 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "MewLabTcpCommunication/1.0.0": {
+      "NekoIOLabsTcpCommunication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "compile": {
-          "bin/placeholder/MewLabTcpCommunication.dll": {}
+          "bin/placeholder/NekoIOLabsTcpCommunication.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MewLabTcpCommunication.dll": {}
+          "bin/placeholder/NekoIOLabsTcpCommunication.dll": {}
         }
       }
     }
@@ -5621,19 +5621,19 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MewLabTcpCommunication/1.0.0": {
+    "NekoIOLabsTcpCommunication/1.0.0": {
       "type": "project",
-      "path": "../MewLabTcpCommunication/MewLabTcpCommunication.csproj",
-      "msbuildProject": "../MewLabTcpCommunication/MewLabTcpCommunication.csproj"
+      "path": "../NekoIOLabsTcpCommunication/NekoIOLabsTcpCommunication.csproj",
+      "msbuildProject": "../NekoIOLabsTcpCommunication/NekoIOLabsTcpCommunication.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "MSTest.TestAdapter >= 1.1.18",
       "MSTest.TestFramework >= 1.1.18",
-      "MewLabTcpCommunication >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170628-02",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "NekoIOLabsTcpCommunication >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5646,11 +5646,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\CommunicationTests\\CommunicationTests.csproj",
+      "projectUniqueName": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\CommunicationTests\\CommunicationTests.csproj",
       "projectName": "CommunicationTests",
-      "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\CommunicationTests\\CommunicationTests.csproj",
+      "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\CommunicationTests\\CommunicationTests.csproj",
       "packagesPath": "C:\\Users\\ww.QBUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\CommunicationTests\\obj\\",
+      "outputPath": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\CommunicationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5671,8 +5671,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\MewLabTcpCommunication\\MewLabTcpCommunication.csproj": {
-              "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\MewLabTcpCommunication\\MewLabTcpCommunication.csproj"
+            "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication.csproj": {
+              "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication.csproj"
             }
           }
         }

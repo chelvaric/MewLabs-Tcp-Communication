@@ -10,8 +10,8 @@
         "dependencies": {
           "MSTest.TestAdapter": "1.1.18",
           "MSTest.TestFramework": "1.1.18",
-          "MewLabTcpCommunication": "1.0.0",
-          "Microsoft.NET.Test.Sdk": "15.3.0-preview-20170628-02"
+          "Microsoft.NET.Test.Sdk": "15.3.0-preview-20170628-02",
+          "NekoIOLabsTcpCommunication": "1.0.0"
         },
         "runtime": {
           "CommunicationTests.dll": {}
@@ -990,9 +990,9 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "MewLabTcpCommunication/1.0.0": {
+      "NekoIOLabsTcpCommunication/1.0.0": {
         "runtime": {
-          "MewLabTcpCommunication.dll": {}
+          "NekoIOLabsTcpCommunication.dll": {}
         }
       }
     }
@@ -1493,7 +1493,7 @@
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
-    "MewLabTcpCommunication/1.0.0": {
+    "NekoIOLabsTcpCommunication/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

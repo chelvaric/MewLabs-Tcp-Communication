@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MewLabsWebScoketProtocolParser\MewLabsWebScoketProtocolParser.csproj" />
-    <ProjectReference Include="..\MewLabTcpCommunication\MewLabTcpCommunication.csproj" />
+    <ProjectReference Include="..\NekoIOLabsTcpCommunication\NekoIOLabsTcpCommunication.csproj" />
+    <ProjectReference Include="..\NekoIOLabsWebScoketProtocolParser\NekoIOLabsWebScoketProtocolParser.csproj" />
   </ItemGroup>
 
 </Project>

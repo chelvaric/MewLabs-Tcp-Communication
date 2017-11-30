@@ -1,0 +1,11 @@
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.deps.json
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.dll
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.pdb
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.dll
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\NekoIOLabsTcpCommunication.pdb
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.csprojResolveAssemblyReference.cache
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.csproj.CoreCompileInputs.cache
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.AssemblyInfoInputs.cache
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.AssemblyInfo.cs
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.dll
+C:\Users\ww.QBUS\source\repos\NekoIOLabsTcpCommunication\NekoIOLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\NekoIOLabsWebScoketProtocolParser.pdb

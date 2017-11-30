@@ -8,24 +8,24 @@
     ".NETCoreApp,Version=v2.0": {
       "ExampleWebSocketProject/1.0.0": {
         "dependencies": {
-          "MewLabTcpCommunication": "1.0.0",
-          "MewLabsWebScoketProtocolParser": "1.0.0"
+          "NekoIOLabsTcpCommunication": "1.0.0",
+          "NekoIOLabsWebScoketProtocolParser": "1.0.0"
         },
         "runtime": {
           "ExampleWebSocketProject.dll": {}
         }
       },
-      "MewLabsWebScoketProtocolParser/1.0.0": {
-        "dependencies": {
-          "MewLabTcpCommunication": "1.0.0"
-        },
+      "NekoIOLabsTcpCommunication/1.0.0": {
         "runtime": {
-          "MewLabsWebScoketProtocolParser.dll": {}
+          "NekoIOLabsTcpCommunication.dll": {}
         }
       },
-      "MewLabTcpCommunication/1.0.0": {
+      "NekoIOLabsWebScoketProtocolParser/1.0.0": {
+        "dependencies": {
+          "NekoIOLabsTcpCommunication": "1.0.0"
+        },
         "runtime": {
-          "MewLabTcpCommunication.dll": {}
+          "NekoIOLabsWebScoketProtocolParser.dll": {}
         }
       }
     }
@@ -36,12 +36,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MewLabsWebScoketProtocolParser/1.0.0": {
+    "NekoIOLabsTcpCommunication/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MewLabTcpCommunication/1.0.0": {
+    "NekoIOLabsWebScoketProtocolParser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

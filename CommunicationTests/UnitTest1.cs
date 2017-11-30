@@ -7,7 +7,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
+using NekoIOLabsTcpCommunication.Server.Models;
 namespace CommunicationTests
 {
     [TestClass]
@@ -16,12 +16,12 @@ namespace CommunicationTests
         [TestMethod]
         public void TcpCommunicationTest()
         {
-            var server = new MewLabTcpCommunication.Server.Models.MewLabsServer(IPAddress.Any, MewLabTcpCommunication.Server.Models.MEWLABS_COMMUNICATION_TYPE.TCP, 54001);
+            var server = new NekoIOLabsServer(IPAddress.Any, NEKOIOLABS_COMMUNICATION_TYPE.TCP, 54001);
            
 
                 Task.Run(async () =>
                 {
-                    var serverTask = server.Start();
+                     server.Start();
 
                     var tasks = new List<Task>();
 
@@ -47,7 +47,7 @@ namespace CommunicationTests
                             }
                         }));
                     }
-                    await serverTask;
+                 
 
                     //Assert.IsTrue(Task.WaitAll(tasks.ToArray(), 10000));
                     Debug.WriteLine($"IsTrue: " + Task.WaitAll(tasks.ToArray(), 10000));

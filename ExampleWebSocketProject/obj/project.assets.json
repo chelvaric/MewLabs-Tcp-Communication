@@ -197,27 +197,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "MewLabsWebScoketProtocolParser/1.0.0": {
+      "NekoIOLabsTcpCommunication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/NekoIOLabsTcpCommunication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NekoIOLabsTcpCommunication.dll": {}
+        }
+      },
+      "NekoIOLabsWebScoketProtocolParser/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "MewLabTcpCommunication": "1.0.0"
+          "NekoIOLabsTcpCommunication": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/MewLabsWebScoketProtocolParser.dll": {}
+          "bin/placeholder/NekoIOLabsWebScoketProtocolParser.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MewLabsWebScoketProtocolParser.dll": {}
-        }
-      },
-      "MewLabTcpCommunication/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/MewLabTcpCommunication.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MewLabTcpCommunication.dll": {}
+          "bin/placeholder/NekoIOLabsWebScoketProtocolParser.dll": {}
         }
       }
     }
@@ -680,22 +680,22 @@
         "netstandard.library.nuspec"
       ]
     },
-    "MewLabsWebScoketProtocolParser/1.0.0": {
+    "NekoIOLabsTcpCommunication/1.0.0": {
       "type": "project",
-      "path": "../MewLabsWebScoketProtocolParser/MewLabsWebScoketProtocolParser.csproj",
-      "msbuildProject": "../MewLabsWebScoketProtocolParser/MewLabsWebScoketProtocolParser.csproj"
+      "path": "../NekoIOLabsTcpCommunication/NekoIOLabsTcpCommunication.csproj",
+      "msbuildProject": "../NekoIOLabsTcpCommunication/NekoIOLabsTcpCommunication.csproj"
     },
-    "MewLabTcpCommunication/1.0.0": {
+    "NekoIOLabsWebScoketProtocolParser/1.0.0": {
       "type": "project",
-      "path": "../MewLabTcpCommunication/MewLabTcpCommunication.csproj",
-      "msbuildProject": "../MewLabTcpCommunication/MewLabTcpCommunication.csproj"
+      "path": "../NekoIOLabsWebScoketProtocolParser/NekoIOLabsWebScoketProtocolParser.csproj",
+      "msbuildProject": "../NekoIOLabsWebScoketProtocolParser/NekoIOLabsWebScoketProtocolParser.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "MewLabTcpCommunication >= 1.0.0",
-      "MewLabsWebScoketProtocolParser >= 1.0.0",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "NekoIOLabsTcpCommunication >= 1.0.0",
+      "NekoIOLabsWebScoketProtocolParser >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -708,11 +708,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\ExampleWebSocketProject\\ExampleWebSocketProject.csproj",
+      "projectUniqueName": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\ExampleWebSocketProject\\ExampleWebSocketProject.csproj",
       "projectName": "ExampleWebSocketProject",
-      "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\ExampleWebSocketProject\\ExampleWebSocketProject.csproj",
+      "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\ExampleWebSocketProject\\ExampleWebSocketProject.csproj",
       "packagesPath": "C:\\Users\\ww.QBUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\ExampleWebSocketProject\\obj\\",
+      "outputPath": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\ExampleWebSocketProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -733,11 +733,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\MewLabsWebScoketProtocolParser\\MewLabsWebScoketProtocolParser.csproj": {
-              "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\MewLabsWebScoketProtocolParser\\MewLabsWebScoketProtocolParser.csproj"
+            "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication.csproj": {
+              "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication\\NekoIOLabsTcpCommunication.csproj"
             },
-            "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\MewLabTcpCommunication\\MewLabTcpCommunication.csproj": {
-              "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\MewLabTcpCommunication\\MewLabTcpCommunication\\MewLabTcpCommunication.csproj"
+            "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\NekoIOLabsWebScoketProtocolParser\\NekoIOLabsWebScoketProtocolParser.csproj": {
+              "projectPath": "C:\\Users\\ww.QBUS\\source\\repos\\NekoIOLabsTcpCommunication\\NekoIOLabsWebScoketProtocolParser\\NekoIOLabsWebScoketProtocolParser.csproj"
             }
           }
         }
