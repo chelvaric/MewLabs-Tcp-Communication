@@ -1,0 +1,11 @@
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.deps.json
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.dll
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.pdb
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\MewLabTcpCommunication.dll
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\bin\Debug\netcoreapp2.0\MewLabTcpCommunication.pdb
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.csprojResolveAssemblyReference.cache
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.csproj.CoreCompileInputs.cache
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.AssemblyInfoInputs.cache
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.AssemblyInfo.cs
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.dll
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabsWebScoketProtocolParser\obj\Debug\netcoreapp2.0\MewLabsWebScoketProtocolParser.pdb

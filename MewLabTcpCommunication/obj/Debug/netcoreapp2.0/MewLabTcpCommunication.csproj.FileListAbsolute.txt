@@ -1,0 +1,9 @@
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\bin\Debug\netcoreapp2.0\MewLabTcpCommunication.deps.json
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\bin\Debug\netcoreapp2.0\MewLabTcpCommunication.dll
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\bin\Debug\netcoreapp2.0\MewLabTcpCommunication.pdb
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\obj\Debug\netcoreapp2.0\MewLabTcpCommunication.csproj.CoreCompileInputs.cache
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\obj\Debug\netcoreapp2.0\MewLabTcpCommunication.AssemblyInfoInputs.cache
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\obj\Debug\netcoreapp2.0\MewLabTcpCommunication.AssemblyInfo.cs
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\obj\Debug\netcoreapp2.0\MewLabTcpCommunication.dll
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\obj\Debug\netcoreapp2.0\MewLabTcpCommunication.pdb
+C:\Users\ww.QBUS\source\repos\MewLabTcpCommunication\MewLabTcpCommunication\obj\Debug\netcoreapp2.0\MewLabTcpCommunication.csprojResolveAssemblyReference.cache

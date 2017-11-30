@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "ExampleWebSocketProject/1.0.0": {
+        "dependencies": {
+          "MewLabTcpCommunication": "1.0.0",
+          "MewLabsWebScoketProtocolParser": "1.0.0"
+        },
+        "runtime": {
+          "ExampleWebSocketProject.dll": {}
+        }
+      },
+      "MewLabsWebScoketProtocolParser/1.0.0": {
+        "dependencies": {
+          "MewLabTcpCommunication": "1.0.0"
+        },
+        "runtime": {
+          "MewLabsWebScoketProtocolParser.dll": {}
+        }
+      },
+      "MewLabTcpCommunication/1.0.0": {
+        "runtime": {
+          "MewLabTcpCommunication.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExampleWebSocketProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MewLabsWebScoketProtocolParser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MewLabTcpCommunication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
