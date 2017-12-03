@@ -20,7 +20,7 @@ Through the IProtocolParser Interface you are able to add any kind of protocol a
   and then plug in the parser you want for the server or keep the raw data.
   
  ### 1. Using the default parser and logger
- ```csharp
+ ```cs
 //step one add the using statement atop;
 using NekoIOLabsTcpCommunication.Server.Models;
 
@@ -28,26 +28,26 @@ using NekoIOLabsTcpCommunication.Server.Models;
 NekoIOLabsServer server = new NekoIOLabsServer(IPAddress.Any,NEKOIOLABS_COMMUNICATION_TYPE.TCP,8080);
 
 //step three register to the two events that the server emit
-  server.OnMessageDecoded += Server_OnMessageDecoded;
-  server.OnClientStatusChanged += Server_OnClientStatusChanged;
+server.OnMessageDecoded += Server_OnMessageDecoded;
+server.OnClientStatusChanged += Server_OnClientStatusChanged;
 
 //handle these events as you see fit
-  private static void Server_OnClientStatusChanged(NekoIOLabsTcpCommunication.Server.Events.ClientStateEventArgs args)
+private static void Server_OnClientStatusChanged(NekoIOLabsTcpCommunication.Server.Events.ClientStateEventArgs args)
         {
            //handle client status you get the client id and a enum with the current status
         }
 
-        private static void Server_OnMessageDecoded(NekoIOLabsTcpCommunication.Server.Events.MessageParsedEventArgs eventargs)
+private static void Server_OnMessageDecoded(NekoIOLabsTcpCommunication.Server.Events.MessageParsedEventArgs eventargs)
         {
             //handle the decoded message you recieve from the protocol parser this will be an ICommand
             Console.WriteLine(eventargs.Client.ClientID + " recieved message " + eventargs.Command.ToString());
         }
 
-  // start the server it will automaticly run on a seperated thread
-   server.Start();
+// start the server it will automaticly run on a seperated thread
+server.Start();
 
-   //to stop the server simply call
-   server.Stop();
+//to stop the server simply call
+server.Stop();
 ```
 
  
