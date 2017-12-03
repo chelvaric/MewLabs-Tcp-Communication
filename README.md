@@ -1,7 +1,7 @@
 # NekoIOLabs-Tcp-Communication
 ## General Info
 
-This is a library i made so that people don't have to rewrite common tcp communication classes for server or client. This library has a genreal implementation of a Tcp Server and client.
+This is a library I made so that people don't have to rewrite common TCP communication classes for server or client. This library has a genreal implementation of a TCP Server and client.
 Through the IProtocolParser Interface you are able to add any kind of protocol and get the parsed messages back from the library. As standard I'll release the library with Websocket support since there is no good websocket server provided for .net core outside of asp.net as far as i know. You also have the ILog
 
 ## Features Progression
@@ -20,7 +20,7 @@ Through the IProtocolParser Interface you are able to add any kind of protocol a
   and then plug in the parser you want for the server or keep the raw data.
   
  ### 1. Using the default parser and logger
- ```cs
+ ```csharp
 //step one add the using statement atop;
 using NekoIOLabsTcpCommunication.Server.Models;
 
