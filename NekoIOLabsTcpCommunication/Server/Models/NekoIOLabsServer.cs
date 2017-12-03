@@ -1,4 +1,5 @@
 ﻿using NekoIOLabsTcpCommunication.Interfaces;
+using NekoIOLabsTcpCommunication.Loggers;
 using NekoIOLabsTcpCommunication.RawParser;
 using NekoIOLabsTcpCommunication.Server.Communication;
 using NekoIOLabsTcpCommunication.Server.Events;
@@ -11,6 +12,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace NekoIOLabsTcpCommunication.Server.Models
 {
@@ -69,16 +71,17 @@ namespace NekoIOLabsTcpCommunication.Server.Models
         public IProtocolParser ProtocolParser => _protocolParser;
 
 
-        private ILogger _logger;
+        private static ILogger _logger;
 
-        public ILogger Logger => _logger;
+        public static ILogger Logger => _logger;
 
 
         #endregion
     
 
-
+        //events 
         public event OnMessagePargedEventHandler OnMessageDecoded;
+        public event OnClientEventHandler OnClientStatusChanged;
 
         /// <summary>
         /// Construct a nEw MewLabs Tcp Server, will use default port 80 fro tcp and udp and port 443 for TLS
@@ -90,6 +93,7 @@ namespace NekoIOLabsTcpCommunication.Server.Models
         {
             try
             {
+                //check if they plugged in a parsere other wise use default parser
                 if(parser == null)
                 {
                     _protocolParser = new RawProtocolParser();
@@ -99,7 +103,22 @@ namespace NekoIOLabsTcpCommunication.Server.Models
                     _protocolParser = parser;
                 }
 
+                //check if they plugged in a logger other wise use default logger
+                if (Logger == null)
+                {
+                    if (logger == null)
+                    {
+                        _logger = new SimpleDebugLogger();
+                    }
+                    else
+                    {
+                        _logger = logger;
+                    }
+
+                 }
+                // set up the communcation thread
                 SetCommuncations(type, ip);
+                //init client events from the communication and the client list
                 _connectedClients = new List<NekoIOLabsConnectedClient>();
                 serverCommunication.OnClientConnected += ServerCommunication_OnClientConnected;
             }
@@ -120,6 +139,7 @@ namespace NekoIOLabsTcpCommunication.Server.Models
         {
             try
             {
+
                 if (parser == null)
                 {
                     _protocolParser = new RawProtocolParser();
@@ -127,6 +147,20 @@ namespace NekoIOLabsTcpCommunication.Server.Models
                 else
                 {
                     _protocolParser = parser;
+                }
+
+                //check if they plugged in a logger other wise use default logger
+                if (Logger == null)
+                {
+                    if (logger == null)
+                    {
+                        _logger = new SimpleDebugLogger();
+                    }
+                    else
+                    {
+                        _logger = logger;
+                    }
+
                 }
 
                 SetCommuncations(type, ip,port);
@@ -145,7 +179,7 @@ namespace NekoIOLabsTcpCommunication.Server.Models
             {
                 NekoIOLabsConnectedClient client = new NekoIOLabsConnectedClient(args.ClientID, this, args.ClientData);
 
-                Debug.WriteLine("client" + client.ClientID + " connected");
+                NekoIOLabsServer.Logger?.LogMessage("client" + client.ClientID + " connected",LOG_TYPE.DEBUG);
 
                 _connectedClients.Add(client);
 
@@ -157,14 +191,12 @@ namespace NekoIOLabsTcpCommunication.Server.Models
         }
 
         private void Client_OnClientEvent(ClientStateEventArgs args)
-        {
-            
-        }
+        =>    OnClientStatusChanged?.Invoke(args);
+        
 
         private void Client_OnMessageDecoded(MessageParsedEventArgs eventargs)
-        {
-            OnMessageDecoded?.Invoke(eventargs);
-        }
+            => OnMessageDecoded?.Invoke(eventargs);
+        
 
         public void Stop()
         {
@@ -218,7 +250,10 @@ namespace NekoIOLabsTcpCommunication.Server.Models
           
         }
 
-
+        /// <summary>
+        /// Get a list of the currently connected Clients
+        /// </summary>
+        /// <returns></returns>
         public List<NekoIOLabsConnectedClient> GetAllConnectedClients()
         {
             lock (_connectedClients)
@@ -226,7 +261,12 @@ namespace NekoIOLabsTcpCommunication.Server.Models
                 return _connectedClients;
             }
         }
-
+        
+        /// <summary>
+        /// Get the Client object of an ID
+        /// </summary>
+        /// <param name="id">Client ID</param>
+        /// <returns></returns>
         public NekoIOLabsConnectedClient GetClient(Guid id)
         {
             lock (_connectedClients)
@@ -237,7 +277,25 @@ namespace NekoIOLabsTcpCommunication.Server.Models
                 return _connectedClients.SingleOrDefault(x=>x.ClientID == id);
             }
         }
+        /// <summary>
+        /// Give the command and client id to send a message to a client.
+        /// </summary>
+        /// <param name="id">Client Id</param>
+        /// <param name="message">a object that implements IMessage</param>
+        public void  SendToClient(Guid id,IMessage message)
+        {
+            var client = GetClient(id);
+            if(client != null)
+            {
+                client.SendData(message);
+            }
+        }
 
+        /// <summary>
+        /// Disconnect a client socket by its ID
+        /// </summary>
+        /// <param name="id">The Client ID</param>
+        /// <returns>flase or true if the client still excist</returns>
         public bool DisconnectClient(Guid id)
         {
 
@@ -256,7 +314,9 @@ namespace NekoIOLabsTcpCommunication.Server.Models
 
             
         }
-
+        /// <summary>
+        /// Disconnect all the clients
+        /// </summary>
         public void DisconnectAll()
         {
             lock(_lockConnectedClients)

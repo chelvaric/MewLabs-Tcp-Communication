@@ -14,10 +14,10 @@ namespace ExampleWebSocketProject
             NekoIOLabsServer server = new NekoIOLabsServer(IPAddress.Any,NEKOIOLABS_COMMUNICATION_TYPE.TCP,8080,new NekoIOLabsWebSocketParser());
 
             server.OnMessageDecoded += Server_OnMessageDecoded;
+            server.OnClientStatusChanged += Server_OnClientStatusChanged;
+            server.Start();
 
-              server.Start();
-
-          ;
+          
 
            string line = Console.ReadLine();
 
@@ -28,6 +28,11 @@ namespace ExampleWebSocketProject
 
             }
 
+        }
+
+        private static void Server_OnClientStatusChanged(NekoIOLabsTcpCommunication.Server.Events.ClientStateEventArgs args)
+        {
+            throw new NotImplementedException();
         }
 
         private static void Server_OnMessageDecoded(NekoIOLabsTcpCommunication.Server.Events.MessageParsedEventArgs eventargs)

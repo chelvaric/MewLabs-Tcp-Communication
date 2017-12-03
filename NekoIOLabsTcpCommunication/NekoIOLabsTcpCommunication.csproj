@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Client\" />
-    <Folder Include="Loggers\" />
   </ItemGroup>
 
 </Project>

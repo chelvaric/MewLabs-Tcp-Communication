@@ -85,7 +85,7 @@ namespace NekoIOLabsTcpCommunication.Server.Models
                    
                     if(dataRecieved > 0)
                     {
-                        Debug.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
+                        NekoIOLabsServer.Logger?.LogMessage( "MessageRecieved " + _clientID +" " + ASCIIEncoding.ASCII.GetString(buffer),LOG_TYPE.INFO);
                        IMessage message = _server?.ProtocolParser?.ParseData(buffer);
                         if(message != null)
                         {
@@ -97,7 +97,8 @@ namespace NekoIOLabsTcpCommunication.Server.Models
             }
             catch(Exception ex)
             {
-                Debug.WriteLine(ex.Message);
+                State = CLIENT_STATE.FAULTED;
+                NekoIOLabsServer.Logger?.LogMessage(ex.Message,LOG_TYPE.ERROR);
             }
         }
 
@@ -118,24 +119,28 @@ namespace NekoIOLabsTcpCommunication.Server.Models
             }
             catch(ArgumentOutOfRangeException ex)
             {
-                Debug.WriteLine("tried to write bytes outside of the byte array to the client");
+                State = CLIENT_STATE.FAULTED;
+                NekoIOLabsServer.Logger?.LogMessage("tried to write bytes outside of the byte array to the client",LOG_TYPE.ERROR);
             }
             catch(ObjectDisposedException ex)
             {
                 State = CLIENT_STATE.FAULTED;
-                Debug.WriteLine("tried to write bytes outside of the byte array to the client");
+                NekoIOLabsServer.Logger?.LogMessage("tried to write bytes outside of the byte array to the client",LOG_TYPE.ERROR);
             }
         }
 
         public void Disconnect()
         {
+
             source.Cancel();
             _recieveThread.Join();
             if(_client != null)
             {
                 _client.Close();
                 _client.Dispose();
+                State = CLIENT_STATE.CLOSED;
             }
+            
         }
 
         public void Dispose()
